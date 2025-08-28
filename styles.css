@@ -18,6 +18,7 @@ header {
 }
 
 .header-button {
+    font-family: anek bangla;
     display: flex;
     gap: 20px;
 }
@@ -27,6 +28,7 @@ header {
 }
 
 .icon-button {
+    font-family: anek bangla;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -39,9 +41,10 @@ header {
     border-radius: 50px;
 }
 
-.copy-btn {
+.copy-btn-header {
+    font-family: anek bangla;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 16px;
     font-weight: 600;
     padding: 12px 36px;
     background-color: #00A63E;
@@ -119,18 +122,249 @@ header {
 
 /* -------------------- Hero Section Responsive for Mobile --------------------*/
 @media (max-width: 768px) {
-.hero-section {
-    background-image: linear-gradient(to right, #013223, #006747, #013223);
-    padding: 50px 15px;
-}
-.hero-content h1 {
-    font-size: 30px;
+    .hero-section {
+        background-image: linear-gradient(to right, #013223, #006747, #013223);
+        padding: 50px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
 }
 
-.hero-content p {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
+/* -------------------- Main Section Styles --------------------*/
+.main-section {
+    padding: 60px;
+    background-color: #F5FFF6;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
+
+.card-icon {
+    width: 32px;
+    background-color: #ffe3e2;
+    padding: 14px;
+    border-radius: 16px;
+}
+
+.icon-heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heart-Icon {
+    width: 24px;
+    height: 24px;
+}
+
+.card-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.card-eng-title {
+    color: #5C5C5C;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.call-number {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.category {
+    font-family: anek bangla;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5C5C5C;
+    background-color: #F2F2F2;
+    border-radius: 999px;
+    border: none;
+    padding: 4px 16px;
+    margin-top: 10px;
+}
+
+.copy-btn {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    font-family: anek bangla;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5C5C5C;
+    background-color: transparent;
+    border: 1px solid #D4D6D5;
+    border-radius: 8px;
+    padding: 5px;
+    width: 50%;
+}
+
+.call-btn {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    font-family: anek bangla;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: #00A63E;
+    border: 1px solid #00A63E;
+    border-radius: 8px;
+    padding: 5px;
+    width: 50%;
+}
+
+.card-button {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 2px 3px 0px #00000026;
+    padding: 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-part {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.history-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.call-history-text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.history-part {
+    width: 400px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 3px 0px #00000026;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.call-history {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 8px;
+}
+
+.history-title,
+.history-time {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.history-numb {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: -8px;
+    padding: 0px;
+    color: #5C5C5C;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+/* -------------------- Main Section Responsive for Mobile --------------------*/
+@media (max-width: 768px) {
+    .main-section {
+        padding: 30px 15px;
+        flex-direction: column-reverse;
+    }
+
+    .history-part {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .card-icon {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .heart-Icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .card-eng-title {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .call-number {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .card-part {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+
+
+
 
 }

@@ -1,3 +1,136 @@
-body{
+body {
+    max-width: 1920px;
     font-family: Anek Bangla;
+    margin: 0 auto;
+}
+
+/* ------------------------ Header------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 60px;
+}
+
+.logo {
+    width: 195px;
+    height: 50px;
+}
+
+.header-button {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-button img {
+    width: 30px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 900;
+    border: none;
+    background-color: #41ff6b1a;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+
+.copy-btn {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 12px 36px;
+    background-color: #00A63E;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+
+.menu-bar {
+    display: none;
+}
+
+/* -------------------- Header Responsive for Mobile --------------------*/
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 150px;
+        height: 40px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 14px;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+
+/* -------------------- Hero Section Style --------------------*/
+.hero-section {
+    background-image: linear-gradient(to right, #013223, #006747, #013223);
+    padding: 21px 60px;
+}
+
+.hero-content img {
+    width: 92px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin: 0px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 0px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+/* -------------------- Hero Section Responsive for Mobile --------------------*/
+@media (max-width: 768px) {
+.hero-section {
+    background-image: linear-gradient(to right, #013223, #006747, #013223);
+    padding: 50px 15px;
+}
+.hero-content h1 {
+    font-size: 30px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
 }

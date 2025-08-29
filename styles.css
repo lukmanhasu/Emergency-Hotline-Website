@@ -64,6 +64,43 @@ header {
         margin: 0 auto;
     }
 
+    .header-button {
+        font-family: anek bangla;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .icon-button img {
+        width: 30px;
+    }
+
+    .icon-button {
+        font-family: anek bangla;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 900;
+        border: none;
+        background-color: #41ff6b1a;
+        padding: 4px 32px;
+        border-radius: 50px;
+    }
+
+    .copy-btn-header {
+        font-family: anek bangla;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 600;
+        padding: 4px 30px;
+        background-color: #00A63E;
+        color: white;
+        border-radius: 50px;
+        border: none;
+    }
+
     .logo {
         width: 150px;
         height: 40px;
@@ -71,17 +108,21 @@ header {
 
     header {
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 14px;
+        padding: 20px 15px;
+        gap: 20px;
     }
 
     .header-button {
-        display: none;
+        display: flex;
     }
 
     .menu-bar {
-        display: block;
+        display: none;
         padding: 0px;
         margin: 0px;
     }
